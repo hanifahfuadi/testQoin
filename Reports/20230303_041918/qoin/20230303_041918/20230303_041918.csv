@@ -1,0 +1,30 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+qoin,,,,2023-03-03 04:19:22,2023-03-03 04:19:29,7.212s,PASSED
+,,,,,,,
+Test Cases/Qoin/ListUser,,,,2023-03-03 04:19:23,2023-03-03 04:19:26,3.811s,PASSED
+"ResponseUsers = sendRequest(findTestObject(""QOIN/GET LIST USER""))",,,,2023-03-03 04:19:23,2023-03-03 04:19:26,2.998s,PASSED
+"verifyResponseStatusCode(ResponseUsers, 200, STOP_ON_FAILURE)",,,,2023-03-03 04:19:26,2023-03-03 04:19:26,0.020s,PASSED
+"verifyElementPropertyValue(ResponseUsers, ""data[0].first_name"", ""George"")",,,,2023-03-03 04:19:26,2023-03-03 04:19:26,0.096s,PASSED
+"verifyElementPropertyValue(ResponseUsers, ""data[0].last_name"", ""Bluth"")",,,,2023-03-03 04:19:26,2023-03-03 04:19:26,0.014s,PASSED
+"verifyElementPropertyValue(ResponseUsers, ""data[0].id"", ""1"")",,,,2023-03-03 04:19:26,2023-03-03 04:19:26,0.034s,PASSED
+"verifyElementPropertyValue(ResponseUsers, ""data[0].email"", ""george.bluth@reqres.in"")",,,,2023-03-03 04:19:26,2023-03-03 04:19:26,0.039s,PASSED
+"verifyElementPropertyValue(ResponseUsers, ""data[0].avatar"", ""https://reqres.in/img/faces/1-image.jpg"")",,,,2023-03-03 04:19:26,2023-03-03 04:19:26,0.032s,PASSED
+,,,,,,,
+Test Cases/Qoin/PostRegister,,,,2023-03-03 04:19:26,2023-03-03 04:19:28,1.172s,PASSED
+"PostRegisterResponse = sendRequest(findTestObject(""QOIN/POST REGISTER SUCCESSFUL""))",,,,2023-03-03 04:19:27,2023-03-03 04:19:28,0.630s,PASSED
+"verifyResponseStatusCode(PostRegisterResponse, 200)",,,,2023-03-03 04:19:28,2023-03-03 04:19:28,0.000s,PASSED
+"verifyElementPropertyValue(PostRegisterResponse, ""id"", ""2"")",,,,2023-03-03 04:19:28,2023-03-03 04:19:28,0.046s,PASSED
+"verifyElementPropertyValue(PostRegisterResponse, ""token"", ""QpwL5tke4Pnpja7X2"")",,,,2023-03-03 04:19:28,2023-03-03 04:19:28,0.032s,PASSED
+,,,,,,,
+Test Cases/Qoin/PutUpdate,,,,2023-03-03 04:19:28,2023-03-03 04:19:29,1.043s,PASSED
+"UpdateResponse = sendRequest(findTestObject(""QOIN/PUT UPDATE""))",,,,2023-03-03 04:19:28,2023-03-03 04:19:29,0.599s,PASSED
+"verifyResponseStatusCode(UpdateResponse, 200)",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.005s,PASSED
+,,,,,,,
+Test Cases/Qoin/SingleUser,,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.778s,PASSED
+"SingleUserResponse = sendRequest(findTestObject(""QOIN/GET SINGLE USER""))",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.212s,PASSED
+"verifyResponseStatusCode(SingleUserResponse, 200)",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.003s,PASSED
+"verifyElementPropertyValue(SingleUserResponse, ""data.first_name"", ""Janet"")",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.026s,PASSED
+"verifyElementPropertyValue(SingleUserResponse, ""data.last_name"", ""Weaver"")",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.031s,PASSED
+"verifyElementPropertyValue(SingleUserResponse, ""data.id"", ""2"")",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.029s,PASSED
+"verifyElementPropertyValue(SingleUserResponse, ""data.email"", ""janet.weaver@reqres.in"")",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.029s,PASSED
+"verifyElementPropertyValue(SingleUserResponse, ""data.avatar"", ""https://reqres.in/img/faces/2-image.jpg"")",,,,2023-03-03 04:19:29,2023-03-03 04:19:29,0.034s,PASSED

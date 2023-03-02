@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="qoin" time="7.212" tests="4" failures="0" errors="0">
+   <testsuite name="qoin" tests="4" failures="0" errors="0" time="7.212" skipped="0" timestamp="2023-03-03 04:19:22" hostname="user - DESKTOP-RRQOO3V" id="Test Suites/qoin">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\user\\git\\QOINUji\\Reports\\20230303_041918\\qoin\\20230303_041918"/>
+         <property name="logFiles" value="C:\\Users\\user\\git\\QOINUji\\Reports\\20230303_041918\\qoin\\20230303_041918\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="user - DESKTOP-RRQOO3V"/>
+         <property name="hostAddress" value="192.168.115.106"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.5.5.208"/>
+      </properties>
+      <testcase name="Test Cases/Qoin/ListUser" time="3.811" classname="Test Cases/Qoin/ListUser" status="PASSED">
+         <system-out><![CDATA[2023-03-03 04:19:23 - [TEST_CASE][PASSED] - Test Cases/Qoin/ListUser: Test Cases/Qoin/ListUser
+
+2023-03-03 04:19:23 - [TEST_STEP][PASSED] - ResponseUsers = sendRequest(findTestObject("QOIN/GET LIST USER")): Send request successfully
+
+2023-03-03 04:19:26 - [MESSAGE][INFO] - HAR: C:\Users\user\git\QOINUji\Reports\20230303_041918\qoin\20230303_041918\requests\main\0.har
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Send request successfully
+
+2023-03-03 04:19:26 - [TEST_STEP][PASSED] - verifyResponseStatusCode(ResponseUsers, 200, STOP_ON_FAILURE): Verify response status code successfully
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-03-03 04:19:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(ResponseUsers, "data[0].first_name", "George"): Verify element property value successfully
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(ResponseUsers, "data[0].last_name", "Bluth"): Verify element property value successfully
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(ResponseUsers, "data[0].id", "1"): Verify element property value successfully
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(ResponseUsers, "data[0].email", "george.bluth@reqres.in"): Verify element property value successfully
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:26 - [TEST_STEP][PASSED] - verifyElementPropertyValue(ResponseUsers, "data[0].avatar", "https://reqres.in/img/faces/1-image.jpg"): Verify element property value successfully
+
+2023-03-03 04:19:26 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Qoin/PostRegister" time="1.172" classname="Test Cases/Qoin/PostRegister" status="PASSED">
+         <system-out><![CDATA[2023-03-03 04:19:26 - [TEST_CASE][PASSED] - Test Cases/Qoin/PostRegister: Test Cases/Qoin/PostRegister
+
+2023-03-03 04:19:27 - [TEST_STEP][PASSED] - PostRegisterResponse = sendRequest(findTestObject("QOIN/POST REGISTER SUCCESSFUL")): Send request successfully
+
+2023-03-03 04:19:28 - [MESSAGE][INFO] - HAR: C:\Users\user\git\QOINUji\Reports\20230303_041918\qoin\20230303_041918\requests\main\1.har
+
+2023-03-03 04:19:28 - [MESSAGE][PASSED] - Send request successfully
+
+2023-03-03 04:19:28 - [TEST_STEP][PASSED] - verifyResponseStatusCode(PostRegisterResponse, 200): Verify response status code successfully
+
+2023-03-03 04:19:28 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-03-03 04:19:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(PostRegisterResponse, "id", "2"): Verify element property value successfully
+
+2023-03-03 04:19:28 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:28 - [TEST_STEP][PASSED] - verifyElementPropertyValue(PostRegisterResponse, "token", "QpwL5tke4Pnpja7X2"): Verify element property value successfully
+
+2023-03-03 04:19:28 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Qoin/PutUpdate" time="1.043" classname="Test Cases/Qoin/PutUpdate" status="PASSED">
+         <system-out><![CDATA[2023-03-03 04:19:28 - [TEST_CASE][PASSED] - Test Cases/Qoin/PutUpdate: Test Cases/Qoin/PutUpdate
+
+2023-03-03 04:19:28 - [TEST_STEP][PASSED] - UpdateResponse = sendRequest(findTestObject("QOIN/PUT UPDATE")): Send request successfully
+
+2023-03-03 04:19:29 - [MESSAGE][INFO] - HAR: C:\Users\user\git\QOINUji\Reports\20230303_041918\qoin\20230303_041918\requests\main\2.har
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Send request successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(UpdateResponse, 200): Verify response status code successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify response status code successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Qoin/SingleUser" time="0.778" classname="Test Cases/Qoin/SingleUser" status="PASSED">
+         <system-out><![CDATA[2023-03-03 04:19:29 - [TEST_CASE][PASSED] - Test Cases/Qoin/SingleUser: Test Cases/Qoin/SingleUser
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - SingleUserResponse = sendRequest(findTestObject("QOIN/GET SINGLE USER")): Send request successfully
+
+2023-03-03 04:19:29 - [MESSAGE][INFO] - HAR: C:\Users\user\git\QOINUji\Reports\20230303_041918\qoin\20230303_041918\requests\main\3.har
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Send request successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyResponseStatusCode(SingleUserResponse, 200): Verify response status code successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(SingleUserResponse, "data.first_name", "Janet"): Verify element property value successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(SingleUserResponse, "data.last_name", "Weaver"): Verify element property value successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(SingleUserResponse, "data.id", "2"): Verify element property value successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(SingleUserResponse, "data.email", "janet.weaver@reqres.in"): Verify element property value successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2023-03-03 04:19:29 - [TEST_STEP][PASSED] - verifyElementPropertyValue(SingleUserResponse, "data.avatar", "https://reqres.in/img/faces/2-image.jpg"): Verify element property value successfully
+
+2023-03-03 04:19:29 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2023-03-03 04:19:22 - [TEST_SUITE][PASSED] - qoin: Test Cases/Qoin/SingleUser]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
